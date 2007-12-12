@@ -1,5 +1,5 @@
 %define version 0.9.2
-%define release 3mdk
+%define release %mkrel 3
 
 %define summary Chess variant that cause surronding pieces to disappear
 Summary:	%{summary}
