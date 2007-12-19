@@ -27,16 +27,16 @@ pieces and all pieces on neighbour fields die.
 rm -rf %{buildroot}
 %makeinstall_std
 
-mkdir -p %{buildroot}%{_menudir}
-cat << _EOF_ > %{buildroot}%{_menudir}/%{name}
-?package(%{name}): \
- command="%{_gamesbindir}/%{name}" \
- icon="boards_section.png" \
- longtitle="%{summary}" \
- needs="x11" \
- section="Amusement/Boards" \
- title="Nuclear Chess"
-_EOF_
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{_gamesbindir}/%{name} 
+Icon=boards_section 
+Comment=%{summary}  
+Categories=BoardGame; 
+Name=Nuclear Chess
+EOF
 
 %clean
 rm -rf %{buildroot}
@@ -52,5 +52,5 @@ rm -rf %{buildroot}
 %doc AUTHORS ChangeLog COPYING README
 %{_gamesbindir}/*
 %{_gamesdatadir}/%{name}
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 
