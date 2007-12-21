@@ -10,6 +10,7 @@ License:	GPL
 Source:		nuclearchess-0.9.2.tar.bz2
 Group:		Games/Boards
 URL:		http://www.linux-games.com/nuclearchess/
+Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	SDL_image1.2-devel
 
 %description
