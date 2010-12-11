@@ -1,5 +1,5 @@
 %define version 1.0.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 %define summary Chess variant that cause surronding pieces to disappear
 Summary:	%{summary}
