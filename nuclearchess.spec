@@ -2,7 +2,7 @@
 Summary:	%{summary}
 Name:		nuclearchess
 Version:	1.0.0
-Release:	3
+Release:	4
 License:	GPLv2
 Source:		http://user.cs.tu-berlin.de/~karlb//%{name}/%{name}-%{version}.tar.gz
 Group:		Games/Boards
