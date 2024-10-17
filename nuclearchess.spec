@@ -6,7 +6,7 @@ Release:	4
 License:	GPLv2
 Source:		http://user.cs.tu-berlin.de/~karlb//%{name}/%{name}-%{version}.tar.gz
 Group:		Games/Boards
-URL:		http://www.linux-games.com/nuclearchess/
+URL:		https://www.linux-games.com/nuclearchess/
 BuildRequires:	libSDL_image-devel
 
 %description
